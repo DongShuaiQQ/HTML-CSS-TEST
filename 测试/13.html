@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            height: 200px;
+            width: 200px;
+            border: 120px solid red;
+            box-sizing:border-box;
+        } */
+        img{
+            height: 50px;
+            width: 50px;
+            filter: blur(10px);
+        }
+        img:hover{
+            filter: blur(0);
+        }
+        .father{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(231, 143, 248);
+        }
+        .son{
+            width: calc(100% - 60px);
+            height: 20px;
+            background-color: sandybrown;
+        }
+        .gd{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            transition: width 1s ease 1s;
+        }
+        .gd:hover{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <img src="img.png" alt="">
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <!-- 过渡 -->
+    <div class="gd">
+
+    </div>
+</body>
+</html>

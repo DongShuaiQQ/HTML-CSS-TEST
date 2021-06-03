@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.div1{
+    font-size: 12px;
+}
+p{
+    width: 10em;
+    height: 10em;
+    background-color: aquamarine;
+}
+/* ---------------------- */
+    /* 在我的屏幕上最大的宽度是800像素  max-width 小于等于800px
+       媒体查询可以根据不同的屏幕尺寸在改变不同的样式
+    */
+        /* @media screen and (max-width:1200px){
+        body{
+            background-color: rgb(242, 255, 66);
+        }
+    }
+    @media screen and (max-width:800px){
+        body{
+            background-color: rgb(66, 154, 255);
+        }
+    }
+    @media screen and (max-width:500px){
+        body{
+            background-color: rgb(165, 69, 255);
+        }
+    } */
+    @media screen and (min-width:320px){
+        html{
+            font-size: 50px;
+        }
+    }
+    @media screen and (min-width:640px){
+        html{
+            font-size: 100px;
+        }
+    }
+
+    .div2{
+        height: 1rem;
+        margin: 0 auto;
+        font-size: .5rem;
+        color: #fff;
+        background-color: aquamarine;
+        text-align: center;
+        line-height: 1rem;
+        font-weight: 700;
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p></p>
+    </div>
+    <!-- ---------------------- -->
+    <div class="div2">
+        购物车
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            width: 70%;
+            height: 150px;
+            background-color: rgb(198, 255, 105);
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        section div:nth-child(1){
+            width: 100px;
+            height: 150px;
+            background-color: rgb(245, 108, 245);
+        }
+        section div:nth-child(2){
+            flex: 2;
+            width: 100px;
+            height: 150px;
+            background-color: rgb(61, 106, 253);
+        }
+        section div:nth-child(3){
+            width: 100px;
+            height: 150px;
+            background-color: rgb(245, 108, 245);
+        }
+        nav{
+            display: flex;
+            height: 150px;
+            width: 60%;
+            background-color: pink;
+            margin: 10px auto;
+        }
+        nav span{
+            flex: 1;    
+        }
+        nav span:nth-child(2){
+            flex: 2;
+            background-color: rgb(111, 248, 248);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <nav>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+
+    </nav>
+</body>
+</html>

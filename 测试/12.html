@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon.eot?w0fhh9');
+            src:  url('fonts/icomoon.eot?w0fhh9#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?w0fhh9') format('truetype'),
+                url('fonts/icomoon.woff?w0fhh9') format('woff'),
+                url('fonts/icomoon.svg?w0fhh9#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+            }
+            .search{
+            position: relative;
+            height: 30px;
+            width: 200px;
+            font-family: 'icomoon';
+            border: 1px solid red;
+        }
+        .search::after{
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            content: '';
+            color: red;
+        }
+        .tudou img{
+
+            height: 500px;
+            width: 500px;
+        }
+        .tudou{
+            height: 500px;
+            width: 500px;
+            position: relative;
+        }
+        .tudou::before{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            height: 500px;
+            width: 500px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .tudou:hover::before{
+            display: block;        
+        }
+        .father{
+            background-color: royalblue;
+        }
+        .son-1,.son-2{
+            width: 200px;
+            height: 200px;
+            background-color: slateblue;
+            float: left;
+        }
+        div .son-2{
+            background-color: springgreen;
+        }
+        .clearfix:after{
+            content:'';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix-2::before,.clearfix-2::after{
+            content: '';
+            display: table;
+        }
+        .clearfix-2:after{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 案例一 -->
+    <div class="search"></div>
+    <!-- 案例二 -->
+    <div class="tudou">
+        <img src="img.png" alt="">
+    </div>
+    <!-- 案例三  清除浮动-->
+        <!-- <div class="father clearfix"> -->
+        <div class="father clearfix-2">    
+            <div class="son-1"></div>
+            <div class="son-2"></div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单练习</title>
+</head>
+<body>
+    <form action="app.php" method="GET" name="form_1">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="2">青春不常在，抓紧谈恋爱</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">性别</td>
+                    <td>
+                        <label for="nan">男</label><input type="radio" id="nan" name="sex">
+                        <label for="nv">女</label><input type="radio" id="nv" name="sex">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">生日</td>
+                    <td>
+                        <select name="select">
+                            <option selected="selected">--请选择年--</option>
+                            <option >1994</option>
+                            <option >1995</option>
+                            <option >1996</option>
+                        </select>
+                        <select>
+                            <option selected="selected">--请选择月--</option>
+                            <option>12</option>
+                            <option>11</option>
+                            <option>10</option>
+                        </select>
+                        <select>
+                            <option selected="selected">--请选择日--</option>
+                            <option>18</option>
+                            <option>17</option>
+                            <option>16</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">所在地区</td>
+                    <td>
+                        <input type="text" value="沈丘地区">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">婚姻状况</td>
+                    <td>
+                        <input type="radio" name="hunyin" id="weihun"><label for="weihun">未婚</label>
+                        <input type="radio" name="hunyin" id="yihun"><label for="yihun">已婚</label>
+                        <input type="radio" name="hunyin" id="liyi"><label for="liyi">离异</label> 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">喜欢的类型</td>
+                    <td>
+                        <input type="checkbox" name="aihao" id="wumei"><label for="wumei">妩媚的</label>
+                        <input type="checkbox" name="aihao" id="keai"><label for="keai">可爱</label>
+                        <input type="checkbox" name="aihao" id="xianrou"><label for="xianrou">鲜肉</label>
+                        <input type="checkbox" name="aihao" id="larou"><label for="larou">腊肉</label>
+                        <input type="checkbox" name="aihao" id="all"><label for="all">全部</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">自我介绍</td>
+                    <td>
+                        <textarea name="jieshao" cols="20" rows="5">自我介绍</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td><input type="submit" value="免费注册"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>
+                        <input type="checkbox" checked="checked">我同意注册条款和会员加入标准
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>
+                        <a href="#" target="_blank">我是会员，立即登录</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td><h5>我承诺</h5></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>
+                        <ul>
+                            <li>年满18，单身</li>
+                            <li>抱着严重的态度</li>
+                            <li>真诚寻找另一半</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

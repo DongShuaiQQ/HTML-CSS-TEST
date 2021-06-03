@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* input[value]{
+            color: blue;
+        } */
+        /* input[type="text"]{
+            color: cornflowerblue;
+
+        } */
+        /* ul li:first-child{
+            background-color: rgb(90, 218, 250);
+        }
+        ul li:last-child{
+            background-color: darkorange;
+        } */
+        /* 选择偶数行 */
+        /* ul li:nth-child(even){
+            background-color: rgb(212, 243, 156);
+        } */
+        /* 选择奇数行 */
+        /* ul li:nth-child(odd){
+            background-color: rgb(212, 243, 156);
+        } */
+        ul li:nth-child(5n){
+            background-color: rgb(212, 243, 156);
+        }
+        div:before{ 
+            display: inline-block;
+            content: '我';/*  */
+            height: 50px;
+            width: 70px;
+            background-color: rgb(248, 108, 194);
+
+        }
+        div::after{
+            content: '佩奇';/*  */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        是
+    </div>
+    <!-- <input type="text" value="1223354">
+    <input type="text">
+     -->
+     <!-- <input type="text">
+     <input type="password"> -->
+     <ul>
+         <li>1个孩子</li>
+         <li>2个孩子</li>
+         <li>3个孩子</li>
+         <li>4个孩子</li>
+         <li>5个孩子</li>
+         <li>6个孩子</li>
+         <li>7个孩子</li>
+         <li>8个孩子</li>
+     </ul>
+</body>
+</html>
